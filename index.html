@@ -21,11 +21,28 @@
         <!-- Overlays ----------------------------------------------->
         <!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
 
+        <!-- <hr style="border: 5px solid green; border-radius: 5px;"> -->
+
         <!-- Section 1 -->
         <div id="overlay1" class="overlay" onclick="off()">
             <br>
             <h1>Section 1</h1><br>
-            <img src="images/sections/section1.jpg" alt="" width="100%" height="auto"><br>            
+            <img src="images/sections/section1.jpg" alt="" width="100%" height="auto"
+                style="padding: 0; margin: 0; display: block;">
+            <br><br>
+            <div class="sectioncolor" style="background-color: #fcf">
+                <div class="sectiontext" style="background-color: none">
+                    <br>
+                    Der stimmungsvolle Sound eines aussergewöhnlichen Trios.<br><br>
+                    Das Acoustic Jazz Trio gibt jedem Event, ob Geschäftsanlass, Vernissage, Hochzeit oder
+                    Geburtstagsfeier, einen geschmackvollen Rahmen und ein gediegenes Ambiente.<br><br>
+                    Aus dem grossen Repertoire des Great American Songbook zaubern die drei erfahrenen Musiker immer die
+                    passende Stimmung aus dem Hut. Ob mit Swing, Bossa-Nova, Blues oder Groove-Jazz versteht es das
+                    Trio, durch ihr langjähriges Zusammenspiel, flexibel auf die individuellen musikalischen Vorlieben
+                    einzugehen.
+                    <br><br><br><br>
+                </div>
+            </div>
         </div>
         <!-- Section 2 -->
         <div id="overlay2" class="overlay" onclick="off()">
@@ -93,7 +110,7 @@
 
     <!-- Scripts ------------------------------------------>
 
-    <script>        
+    <script>
         // Show Section 1
         function on1() {
             switchToCloseCursor();

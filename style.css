@@ -40,6 +40,28 @@ p {
     font-size: 2vh;
 }
 
+.sectioncolor{
+    position:relative;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    padding: 0;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.sectiontext{
+    position:relative;
+    text-align: left;
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    padding: 0;
+    color: black;
+    font-family: 'Helvetica', sans-serif;    
+    font-size: 4vh;
+}
+
 .overlay {
     position: fixed;
     display: none;
@@ -54,6 +76,10 @@ p {
     /* cursor: pointer; */
     text-align: center;
     overflow-y: scroll;
+}
+
+#overlay1{
+    /* background-color: #8d335e; */
 }
 
 /* #overlay1 img {
