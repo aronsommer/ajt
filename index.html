@@ -21,10 +21,8 @@
         <!-- Overlays ----------------------------------------------->
         <!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
 
-        <!-- <hr style="border: 5px solid green; border-radius: 5px;"> -->
-
-        <!-- Top overlay -->
-        <div id="top-overlay"></div>
+        <!-- Section title -->
+        <div id="section-title"></div>
 
         <!-- Close button -->
         <div id="close-button" onclick="off()"><br>
@@ -243,8 +241,8 @@
         // Show Section 1
         function on1() {
             // switchToCloseCursor();
-            document.getElementById("top-overlay").innerHTML = "<br><h1>Über uns</h1>";
-            document.getElementById("top-overlay").style.display = "block";
+            document.getElementById("section-title").innerHTML = "<br><h1>Über uns</h1>";
+            document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay1").style.display = "block";
             document.getElementById("overlay1").scrollTop = 0;
@@ -252,8 +250,8 @@
         // Show Section 2
         function on2() {
             // switchToCloseCursor();
-            document.getElementById("top-overlay").innerHTML = "<br><h1>Hörproben</h1>";
-            document.getElementById("top-overlay").style.display = "block";
+            document.getElementById("section-title").innerHTML = "<br><h1>Hörproben</h1>";
+            document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay2").style.display = "block";
             document.getElementById("overlay2").scrollTop = 0;
@@ -261,26 +259,25 @@
         // Show Section 3
         function on3() {
             // switchToCloseCursor();
-            document.getElementById("top-overlay").innerHTML = "<br><h1>Events</h1>";
-            document.getElementById("top-overlay").style.display = "block";
+            document.getElementById("section-title").innerHTML = "<br><h1>Events</h1>";
+            document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay3").style.display = "block";
             document.getElementById("overlay3").scrollTop = 0;
         }
-        // Show About
+        // Show Section 4
         function on4() {
             // switchToCloseCursor();
-            document.getElementById("top-overlay").innerHTML = "<br><h1>Kontakt</h1>";
-            document.getElementById("top-overlay").style.display = "block";
+            document.getElementById("section-title").innerHTML = "<br><h1>Kontakt</h1>";
+            document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay4").style.display = "block";
             document.getElementById("overlay4").scrollTop = 0;
         }
         // Hide All
         function off() {
-            // Switch cursor back to default
-            document.body.style.cursor = "default";
-            document.getElementById("top-overlay").style.display = "none";
+            // document.body.style.cursor = "default";
+            document.getElementById("section-title").style.display = "none";
             document.getElementById("close-button").style.display = "none";
             document.getElementById("overlay1").style.display = "none";
             document.getElementById("overlay2").style.display = "none";
@@ -294,7 +291,6 @@
         // Your body onload function
         function startFunction() {
             // Do stuff
-            document.getElementById("top-overlay").style.display = "none";
         }
     </script>
 
