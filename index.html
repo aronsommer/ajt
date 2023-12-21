@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Title</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="This is the website of Your Name" />
+    <meta name="keywords" content="Keyword1, Keyword2, Keyword3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="yourFunction()">
+    <div class="container" data-nosnippet>
+
+        <!-- Overlays ----------------------------------------------->
+        <!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
+
+        <!-- Project 1 -->
+        <div id="overlay1" class="overlay" onclick="off()">
+            <br>
+            <h1>Project 1</h1><br>
+            <img src="images/650x900.png" alt="" width="350" height="auto"><br>
+            <img src="images/900x650.png" alt="" width="480" height="auto">
+            <img src="images/900x650.png" alt="" width="480" height="auto"><br>
+            <img src="images/650x900.png" alt="" width="350" height="auto">
+            <img src="images/650x900.png" alt="" width="350" height="auto"><br>
+            <img src="images/900x650.png" alt="" width="480" height="auto">
+            <img src="images/900x650.png" alt="" width="480" height="auto"><br>
+            <img src="images/650x900.png" alt="" width="350" height="auto">
+            <img src="images/650x900.png" alt="" width="350" height="auto"><br>
+        </div>
+        <!-- Project 2 -->
+        <div id="overlay2" class="overlay" onclick="off()">
+            <br>
+            <h1>Project 2</h1><br>
+            <img src="images/650x900.png" alt="" width="650" height="900"><br>
+            <img src="images/900x650.png" alt="" width="650" height="auto"><br>
+            <img src="images/650x900.png" alt="" width="650" height="900"><br>
+        </div>
+        <!-- Project 3 -->
+        <div id="overlay3" class="overlay" onclick="off()">
+            <br>
+            <h1>Project 3</h1><br>
+            <img src="images/900x650.png" alt="" width="650" height="auto"><br>
+            <img src="images/900x650.png" alt="" width="650" height="auto"><br>
+            <img src="images/900x650.png" alt="" width="650" height="auto"><br>
+        </div>
+        <!-- About -->
+        <div id="overlay4" class="overlay" onclick="off()">
+            <br>
+            <h1>About</h1><br>
+            <img src="images/650x900.png" alt="" width="200" height="auto"><br>
+            <p>
+                Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut<br>
+                labore et dolore magna aliqua.<br>
+            </p>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <p>
+                Ut enim ad minim veniam,<br>
+                quis nostrud exercitation ullamco<br>
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <!-- Main Content ------------------------------------------>
+
+        <div id="main">
+            <br>
+            <h1>The Title</h1><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <button class="astext" onclick="on1()">
+                <h1>Project 1</h1>
+            </button><br>
+            <button class="astext" onclick="on2()">
+                <h1>Project 2</h1>
+            </button><br>
+            <button class="astext" onclick="on3()">
+                <h1>Project 3</h1>
+            </button><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <button class="astext" onclick="on4()">
+                <h1>About</h1>
+            </button><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <p>hello@email.com</p>
+            <p>Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Your Name
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts ------------------------------------------>
+
+    <script>        
+        // Show Project 1
+        function on1() {
+            switchToCloseCursor();
+            document.getElementById("overlay1").style.display = "block";
+            document.getElementById("overlay1").scrollTop = 0;
+        }
+        // Show Project 2
+        function on2() {
+            switchToCloseCursor();
+            document.getElementById("overlay2").style.display = "block";
+            document.getElementById("overlay2").scrollTop = 0;
+        }
+        // Show Project 3
+        function on3() {
+            switchToCloseCursor();
+            document.getElementById("overlay3").style.display = "block";
+            document.getElementById("overlay3").scrollTop = 0;
+        }
+        // Show About
+        function on4() {
+            switchToCloseCursor();
+            document.getElementById("overlay4").style.display = "block";
+            document.getElementById("overlay4").scrollTop = 0;
+        }
+        // Hide All
+        function off() {
+            // Switch cursor back to default
+            document.body.style.cursor = "default";
+            document.getElementById("overlay1").style.display = "none";
+            document.getElementById("overlay2").style.display = "none";
+            document.getElementById("overlay3").style.display = "none";
+            document.getElementById("overlay4").style.display = "none";
+        }
+        // Switch cursor to close style
+        function switchToCloseCursor() {
+            document.body.style.cursor = "url('images/cursor-cross-black.png')16 0, pointer";
+        }
+        // Your body onload function
+        function yourFunction() {
+            // Do stuff
+        }
+    </script>
+
+</body>
+
+</html>
