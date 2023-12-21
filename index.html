@@ -23,10 +23,13 @@
 
         <!-- <hr style="border: 5px solid green; border-radius: 5px;"> -->
 
+        <!-- Top overlay -->
+        <div id="top-overlay" onclick="off()"></div>
+
         <!-- Section 1 -->
         <div id="overlay1" class="overlay" onclick="off()">
-            <br>
-            <h1>Über uns</h1><br>
+            <!-- <h1>Über uns</h1><br> -->
+            <br><br><br><br><br>
             <!-- Section 1-1 -->
             <img src="images/sections/section1-1.jpg" alt="" width="100%" height="auto"
                 style="padding: 0; margin: 0; display: block;"><br><br>
@@ -100,8 +103,8 @@
         </div>
         <!-- Section 2 -->
         <div id="overlay2" class="overlay" onclick="off()">
-            <br>
-            <h1>Hörproben</h1><br>
+            <!-- <h1>Hörproben</h1><br> -->
+            <br><br><br><br><br>
             <!-- Section 2-1 -->
             <img src="images/sections/section2-1.jpg" alt="" width="100%" height="auto"
                 style="padding: 0; margin: 0; display: block;"><br><br>
@@ -115,8 +118,8 @@
         </div>
         <!-- Section 3 -->
         <div id="overlay3" class="overlay" onclick="off()">
-            <br>
-            <h1>Events</h1><br>
+            <!-- <h1>Events</h1><br> -->
+            <br><br><br><br><br>
             <!-- Section 3-1 -->
             <img src="images/sections/section3-1.jpg" alt="" width="100%" height="auto"
                 style="padding: 0; margin: 0; display: block;"><br><br>
@@ -148,8 +151,8 @@
         </div>
         <!-- Section 4 -->
         <div id="overlay4" class="overlay" onclick="off()">
-            <br>
-            <h1>Kontakt</h1><br>
+            <!-- <h1>Kontakt</h1><br> -->
+            <br><br><br><br><br>
             <!-- Section 4-1 -->
             <img src="images/sections/section4-1.jpg" alt="" width="100%" height="auto"
                 style="padding: 0; margin: 0; display: block;"><br><br>
@@ -202,24 +205,32 @@
         // Show Section 1
         function on1() {
             switchToCloseCursor();
+            document.getElementById("top-overlay").innerHTML = "<br><h1>Über uns</h1>";
+            document.getElementById("top-overlay").style.display = "block";
             document.getElementById("overlay1").style.display = "block";
             document.getElementById("overlay1").scrollTop = 0;
         }
         // Show Section 2
         function on2() {
             switchToCloseCursor();
+            document.getElementById("top-overlay").innerHTML = "<br><h1>Hörproben</h1>";
+            document.getElementById("top-overlay").style.display = "block";
             document.getElementById("overlay2").style.display = "block";
             document.getElementById("overlay2").scrollTop = 0;
         }
         // Show Section 3
         function on3() {
             switchToCloseCursor();
+            document.getElementById("top-overlay").innerHTML = "<br><h1>Events</h1>";
+            document.getElementById("top-overlay").style.display = "block";
             document.getElementById("overlay3").style.display = "block";
             document.getElementById("overlay3").scrollTop = 0;
         }
         // Show About
         function on4() {
             switchToCloseCursor();
+            document.getElementById("top-overlay").innerHTML = "<br><h1>Kontakt</h1>";
+            document.getElementById("top-overlay").style.display = "block";
             document.getElementById("overlay4").style.display = "block";
             document.getElementById("overlay4").scrollTop = 0;
         }
@@ -227,6 +238,7 @@
         function off() {
             // Switch cursor back to default
             document.body.style.cursor = "default";
+            document.getElementById("top-overlay").style.display = "none";
             document.getElementById("overlay1").style.display = "none";
             document.getElementById("overlay2").style.display = "none";
             document.getElementById("overlay3").style.display = "none";
@@ -239,6 +251,7 @@
         // Your body onload function
         function yourFunction() {
             // Do stuff
+            document.getElementById("top-overlay").style.display = "none";
         }
     </script>
 
