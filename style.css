@@ -122,6 +122,7 @@ p {
     color: black;
     font-family: 'Helvetica', sans-serif;
     font-size: 4vh;
+    letter-spacing: 0.2vh;
 }
 
 * {
