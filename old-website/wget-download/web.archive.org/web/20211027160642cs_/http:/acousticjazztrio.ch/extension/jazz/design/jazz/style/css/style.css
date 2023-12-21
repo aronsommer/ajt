@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* Sebastian Wohlrab - UI & Web-Development */
+/*<![CDATA[*/
+@import url(https://web.archive.org/web/20190118235739cs_/http://fonts.googleapis.com/css?family=Alegreya:400,700,900);
+@import url(https://web.archive.org/web/20190118235739cs_/http://fonts.googleapis.com/css?family=Alegreya+Sans:100,400,500,700,800,900);
+@media all {
+  * {
+    margin: 0;
+    padding: 0; }
+
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  textarea,
+  a,
+  p,
+  blockquote,
+  th,
+  td,
+  fieldset {
+    margin: 0;
+    padding: 0; }
+
+  img,
+  fieldset {
+    border: 0; }
+
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var {
+    font-style: normal;
+    font-weight: normal; }
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: normal; } }
+/*]]>*/
+body {
+  font-family: 'Alegreya', serif;
+  color: #fff;
+  min-width: 1400px; }
+
+.clear {
+  clear: both; }
+
+#header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  height: 125px;
+  min-width: 980px; }
+  #header h1 {
+    width: 980px;
+    position: absolute;
+    left: 50%;
+    margin-left: -490px; }
+  #header h1,
+  #header h1 a {
+    display: block;
+    height: 125px;
+    line-height: 125px; }
+  #header h1 a {
+    background: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/AJT_logo.png) center 48px no-repeat;
+    width: 282px; }
+    #header h1 a span {
+      display: none; }
+  #header.scroll {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.75);
+    height: 75px; }
+    #header.scroll h1,
+    #header.scroll h1 a {
+      height: 75px;
+      line-height: 75px; }
+    #header.scroll h1 a {
+      background-position: center center; }
+
+section {
+  margin-bottom: 125px;
+  min-width: 980px; }
+  section.content {
+    position: relative;
+    padding-top: 75px; }
+    section.content header {
+      height: 490px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-width: 980px; }
+      section.content header h2 {
+        -webkit-box-sizing: border-box;
+        /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        box-sizing: border-box;
+        /* Opera/IE 8+ */
+        padding: 0 100px;
+        line-height: 100px;
+        height: 100px;
+        font-size: 36px;
+        margin-left: -490px;
+        width: 980px;
+        position: absolute;
+        bottom: 0;
+        left: 50%; }
+    section.content article {
+      -webkit-box-sizing: border-box;
+      /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;
+      /* Firefox, other Gecko */
+      box-sizing: border-box;
+      /* Opera/IE 8+ */
+      padding: 50px 100px 100px 100px;
+      width: 980px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 26px;
+      font-family: 'Alegreya Sans', sans-serif; }
+      section.content article a {
+        color: #fff; }
+      section.content article ul {
+        padding-left: 5px; }
+        section.content article ul li {
+          list-style-type: none;
+          padding-left: 5px;
+          margin-bottom: 4px; }
+        section.content article ul li:before {
+          content: "·";
+          font-size: 18px;
+          line-height: 1px;
+          vertical-align: middle;
+          position: relative;
+          left: -10px;
+          top: -3px;
+          width: 5px;
+          margin-right: -3px; }
+      section.content article .jp-container {
+        margin-bottom: 15px; }
+      section.content article .jp-container:last-child {
+        margin-bottom: 0; }
+      section.content article .column {
+        float: left;
+        margin: 0 15px; }
+        section.content article .column.full {
+          width: 780px; }
+        section.content article .column.third {
+          width: 240px; }
+      section.content article p {
+        margin-bottom: 30px; }
+        section.content article p.small {
+          line-height: 24px; }
+        section.content article p i, section.content article p italic {
+          font-weight: normal;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 24px; }
+      section.content article p:last-child {
+        margin-bottom: 0; }
+      section.content article h2,
+      section.content article h3 {
+        font-weight: bold;
+        line-height: 26px; }
+    section.content nav {
+      display: block;
+      width: 980px;
+      margin-left: -490px;
+      position: absolute;
+      left: 50%;
+      font-size: 14px;
+      text-align: center;
+      bottom: -34px; }
+      section.content nav ul li {
+        display: inline; }
+        section.content nav ul li a {
+          text-decoration: none; }
+          section.content nav ul li a:hover {
+            text-decoration: underline; }
+  section#navigation {
+    margin-top: 125px;
+    background: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/ajax_loader.gif) center center no-repeat; }
+    section#navigation ul li {
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 70px;
+      line-height: 70px;
+      min-width: 980px;
+      position: relative;
+      display: block; }
+      section#navigation ul li span.wrap {
+        width: 980px;
+        display: block;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        margin-left: -490px;
+        overflow: hidden; }
+      section#navigation ul li a {
+        display: block;
+        height: 70px;
+        background: #fff;
+        padding: 0 100px;
+        position: absolute;
+        left: 0;
+        background-position: left center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px; }
+      section#navigation ul li#nav_ambience {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_ambience_off.jpg); }
+        section#navigation ul li#nav_ambience a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_ambience_off_link.jpg); }
+        section#navigation ul li#nav_ambience:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_ambience_on.jpg); }
+          section#navigation ul li#nav_ambience:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_ambience_on_link.jpg); }
+      section#navigation ul li#nav_sound {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_sound_off.jpg); }
+        section#navigation ul li#nav_sound a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_sound_off_link.jpg); }
+        section#navigation ul li#nav_sound:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_sound_on.jpg); }
+          section#navigation ul li#nav_sound:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_sound_on_link.jpg); }
+      section#navigation ul li#nav_play {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_play_off.jpg); }
+        section#navigation ul li#nav_play a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_play_off_link.jpg); }
+        section#navigation ul li#nav_play:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_play_on.jpg); }
+          section#navigation ul li#nav_play:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_play_on_link.jpg); }
+      section#navigation ul li#nav_trio {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_trio_off.jpg); }
+        section#navigation ul li#nav_trio a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_trio_off_link.jpg); }
+        section#navigation ul li#nav_trio:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_trio_on.jpg); }
+          section#navigation ul li#nav_trio:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_trio_on_link.jpg); }
+      section#navigation ul li#nav_events {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_events_off.jpg); }
+        section#navigation ul li#nav_events a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_events_off_link.jpg); }
+        section#navigation ul li#nav_events:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_events_on.jpg); }
+          section#navigation ul li#nav_events:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_events_on_link.jpg); }
+      section#navigation ul li#nav_contact {
+        background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_contact_off.jpg); }
+        section#navigation ul li#nav_contact a {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_contact_off_link.jpg); }
+        section#navigation ul li#nav_contact:hover {
+          background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_contact_on.jpg); }
+          section#navigation ul li#nav_contact:hover a {
+            background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/nav_contact_on_link.jpg); }
+
+.jp-gui span {
+  display: none; }
+.jp-gui .ui-state-default {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  border: 2px solid #fff !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/jquery_ui_icons_default-white.png) !important;
+  background-size: auto;
+  background-origin: padding-box;
+  opacity: 0.65; }
+  .jp-gui .ui-state-default:hover {
+    opacity: 1; }
+  .jp-gui .ui-state-default a {
+    outline: none !important;
+    opacity: 0; }
+  .jp-gui .ui-state-default .ui-icon {
+    background-image: url(https://web.archive.org/web/20190118235739im_/http://acousticjazztrio.ch/extension/jazz/design/jazz/style/img/jquery_ui_icons_default.png) !important; }
+.jp-gui .ui-slider-handle {
+  background-image: none !important;
+  background: #fff !important;
+  opacity: 1 !important; }
+.jp-gui .jp-play {
+  background-position: 2px -158px; }
+.jp-gui .jp-pause {
+  background-position: -15px -158px;
+  opacity: 1 !important; }
+  .jp-gui .jp-pause a {
+    opacity: 0 !important; }
+.jp-gui .jp-stop {
+  background-position: -95px -158px; }
+.jp-gui .jp-repeat-off,
+.jp-gui .jp-repeat {
+  background-position: -62px -78px; }
+.jp-gui .jp-unmute,
+.jp-gui .jp-repeat-off {
+  opacity: 1 !important; }
+  .jp-gui .jp-unmute a,
+  .jp-gui .jp-repeat-off a {
+    opacity: 0 !important; }
+.jp-gui .jp-unmute,
+.jp-gui .jp-mute {
+  background-position: -126px -158px; }
+.jp-gui .jp-volume-max {
+  background-position: -142px -158px; }
+.jp-gui .ui-state-default {
+  display: block; }
+.jp-gui .jp-progress-slider,
+.jp-gui .jp-volume-slider {
+  border: none !important;
+  background: rgba(255, 255, 255, 0.65); }
+  .jp-gui .jp-progress-slider .ui-slider-range,
+  .jp-gui .jp-volume-slider .ui-slider-range {
+    background: #fff; }
+  .jp-gui .jp-progress-slider .ui-slider-handle,
+  .jp-gui .jp-volume-slider .ui-slider-handle {
+    cursor: pointer; }
+.jp-gui .jp-progress-slider {
+  width: 448px;
+  margin: 7px 20px 0px 20px;
+  height: 10px !important; }
+  .jp-gui .jp-progress-slider .ui-slider-handle {
+    width: 18px;
+    height: 18px;
+    top: -4px; }
+.jp-gui .jp-volume-slider {
+  width: 100px;
+  margin: 8px 16px 0px 16px;
+  height: 8px !important; }
+  .jp-gui .jp-volume-slider .ui-slider-handle {
+    width: 14px;
+    height: 14px;
+    top: -3px; }
+.jp-gui .ui-state-default,
+.jp-gui .jp-progress-slider,
+.jp-gui .jp-volume-slider {
+  float: left; }
+.jp-gui .jp-current-time,
+.jp-gui .jp-duration {
+  display: none; }
+.jp-gui .jp-pause,
+.jp-gui .jp-play {
+  margin-right: 5px; }
+.jp-gui .jp-repeat-off,
+.jp-gui .jp-repeat {
+  margin-right: 20px; }
+
+/*
+     FILE ARCHIVED ON 23:57:39 Jan 18, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:47:44 Dec 20, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 94.971
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.07
+  cdx.remote: 0.06
+  esindex: 0.009
+  LoadShardBlock: 66.906 (3)
+  PetaboxLoader3.datanode: 172.608 (5)
+  load_resource: 252.103 (2)
+  PetaboxLoader3.resolve: 81.503 (2)
+*/
