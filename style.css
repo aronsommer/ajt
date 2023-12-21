@@ -40,28 +40,6 @@ p {
     font-size: 2vh;
 }
 
-.sectioncolor{
-    position:relative;
-    margin: auto;
-    width: 75%;
-    height: auto;
-    padding: 0;
-    color: white;
-    font-family: 'Helvetica', sans-serif;
-}
-
-.sectiontext{
-    position:relative;
-    text-align: left;
-    width: 90%;
-    height: 50%;
-    margin: auto;
-    padding: 0;
-    color: black;
-    font-family: 'Helvetica', sans-serif;    
-    font-size: 4vh;
-}
-
 .overlay {
     position: fixed;
     display: none;
@@ -78,7 +56,12 @@ p {
     overflow-y: scroll;
 }
 
-#overlay1{
+/* .overlay h1{
+    letter-spacing: 0.3vh;
+    font-size: 7.5vh;
+} */
+
+#overlay1 {
     /* background-color: #8d335e; */
 }
 
@@ -89,6 +72,26 @@ p {
     -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 } */
 
+.sectioncolor {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    height: auto;
+}
+
+.sectiontext {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    width: 90%;
+    height: 50%;
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 4vh;
+}
+
 * {
     /* Remove blue highlight of button on mobile */
     -webkit-tap-highlight-color: transparent;
@@ -97,25 +100,29 @@ p {
 /* Only on mobile //////////////////////////////*/
 
 @media only screen and (max-width: 768px) {
+
     /* Images width 100% */
     img {
         width: 100%;
         height: auto;
     }
+
     /* Remove shadows from drawings */
-    #overlay1 img {
+    /* #overlay1 img {
         box-shadow: none;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         -khtml-box-shadow: none;
-    }
+    } */
+
     /* Images width 50% in About section*/
-    #overlay4 img {
+    /* #overlay4 img {
         width: 50%;
         height: auto;
-    }
+    } */
+
     /* Adjust font size in About section*/
-    #overlay4 p {
+    /* #overlay4 p {
         font-size: 3.5vw;
-    }
+    } */
 }
