@@ -91,6 +91,19 @@ p {
     text-align: center;
 }
 
+#close-button {
+    display: none;
+    background-color: none;
+    position: absolute;
+    right: 0px;
+    z-index: 11;
+    width: 10%;
+    height: 10%;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
 .sectioncolor {
     position: relative;
     margin: auto;
