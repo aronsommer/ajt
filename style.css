@@ -130,32 +130,30 @@ p {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Only on mobile //////////////////////////////*/
+/* Desktop */
+@media screen and (min-width: 992px) {
 
-@media only screen and (max-width: 768px) {
-
-    /* Images width 100% */
-    img {
-        width: 100%;
-        height: auto;
+    h1 {
+        letter-spacing: 0.2vh;
+        font-size: 5vh;
+        line-height: 1vh;
     }
+    .sectiontext {
+        font-size: 4vh;
+        letter-spacing: 0.2vh;
+    }
+}
 
-    /* Remove shadows from drawings */
-    /* #overlay1 img {
-        box-shadow: none;
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        -khtml-box-shadow: none;
-    } */
+/* Mobile */
+@media screen and (max-width: 992px) {
 
-    /* Images width 50% in About section*/
-    /* #overlay4 img {
-        width: 50%;
-        height: auto;
-    } */
-
-    /* Adjust font size in About section*/
-    /* #overlay4 p {
-        font-size: 3.5vw;
-    } */
+    h1 {
+        letter-spacing: 0.133vh;
+        font-size: 3.333vh;
+        line-height: 0.666vh;
+    }
+    .sectiontext {
+        font-size: 2.666vh;
+        letter-spacing: 0.133vh;
+    }
 }
