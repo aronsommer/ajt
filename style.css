@@ -56,12 +56,12 @@ p {
     overflow-y: scroll;
 }
 
-#overlay1 img {
+/* #overlay1 img {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-}
+} */
 
 * {
     /* Remove blue highlight of button on mobile */
