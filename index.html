@@ -19,7 +19,6 @@
     <div class="container" data-nosnippet>
 
         <!-- Overlays -->
-        <!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
 
         <!-- Section title -->
         <div id="section-title"></div>
@@ -31,11 +30,9 @@
 
         <!-- Section 1 -->
         <div id="overlay1" class="overlay">
-            <!-- <h1>Über uns</h1><br> -->
             <br><br><br><br><br>
             <!-- Section 1-1 -->
-            <img src="images/sections/section1-1.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section1-1.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #FFCCFF">
                 <div class="sectiontext">
                     <br>
@@ -47,8 +44,7 @@
             </div>
             <br><br>
             <!-- Section 1-2 -->
-            <img src="images/sections/section1-2.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section1-2.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #FFFFCC">
                 <div class="sectiontext">
                     <br>
@@ -61,8 +57,7 @@
             </div>
             <br><br>
             <!-- Section 1-3 -->
-            <img src="images/sections/section1-3.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section1-3.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #CCFFCC">
                 <div class="sectiontext">
                     <br>
@@ -106,11 +101,9 @@
         </div>
         <!-- Section 2 -->
         <div id="overlay2" class="overlay">
-            <!-- <h1>Hörproben</h1><br> -->
             <br><br><br><br><br>
             <!-- Section 2-1 -->
-            <img src="images/sections/section2-1.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section2-1.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #FFFFCC">
                 <div class="sectiontext" style="text-align: center;">
                     <br>
@@ -155,13 +148,11 @@
         </div>
         <!-- Section 3 -->
         <div id="overlay3" class="overlay">
-            <!-- <h1>Events</h1><br> -->
             <br><br><br><br><br>
             <!-- Section 3-1 -->
-            <img src="images/sections/section3-1.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section3-1.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #CCFFCC">
-                <div class="sectiontext" style="background-color: none">
+                <div class="sectiontext" style="text-align: left;">
                     <br>
                     Die akustische Besetzung mit Vibraphon, Saxophon und Kontrabass kreiert eine dezente,
                     unaufdringliche Background Atmosphäre und ist als solche problemlos beweglich und örtlich
@@ -188,11 +179,9 @@
         </div>
         <!-- Section 4 -->
         <div id="overlay4" class="overlay">
-            <!-- <h1>Kontakt</h1><br> -->
             <br><br><br><br><br>
             <!-- Section 4-1 -->
-            <img src="images/sections/section4-1.jpg" alt="" width="100%" height="auto"
-                style="padding: 0; margin: 0; display: block;"><br><br>
+            <img class="full-width-image" src="images/sections/section4-1.jpg" alt=""><br><br>
             <div class="sectioncolor" style="background-color: #CCE6FF">
                 <div class="sectiontext" style="text-align: center;">
                     <br>
@@ -207,25 +196,17 @@
             </div>
         </div>
 
-        <!-- Main Content -->
+        <!-- Main content -->
 
         <div id="main">
             <br>
             <h1>Acoustic Jazz Trio</h1><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="astext" onclick="on1()">
-                <h1>Über uns</h1>
-            </button><br>
-            <button class="astext" onclick="on2()">
-                <h1>Hörproben</h1>
-            </button><br>
-            <button class="astext" onclick="on3()">
-                <h1>Events</h1>
-            </button><br>
+            <button class="astext" onclick="on1()">Über uns</button><br>
+            <button class="astext" onclick="on2()">Hörproben</button><br>
+            <button class="astext" onclick="on3()">Events</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="astext" onclick="on4()">
-                <h1>Kontakt</h1>
-            </button><br>
+            <button class="astext" onclick="on4()">Kontakt</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
             <p>Copyright ©
                 <script>
@@ -238,55 +219,46 @@
     <!-- Scripts -->
 
     <script>
-        // Show Section 1
+        // Show section 1
         function on1() {
-            // switchToCloseCursor();
             document.getElementById("section-title").innerHTML = "<br><h1>Über uns</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay1").style.display = "block";
             document.getElementById("overlay1").scrollTop = 0;
         }
-        // Show Section 2
+        // Show section 2
         function on2() {
-            // switchToCloseCursor();
             document.getElementById("section-title").innerHTML = "<br><h1>Hörproben</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay2").style.display = "block";
             document.getElementById("overlay2").scrollTop = 0;
         }
-        // Show Section 3
+        // Show section 3
         function on3() {
-            // switchToCloseCursor();
             document.getElementById("section-title").innerHTML = "<br><h1>Events</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay3").style.display = "block";
             document.getElementById("overlay3").scrollTop = 0;
         }
-        // Show Section 4
+        // Show section 4
         function on4() {
-            // switchToCloseCursor();
             document.getElementById("section-title").innerHTML = "<br><h1>Kontakt</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay4").style.display = "block";
             document.getElementById("overlay4").scrollTop = 0;
         }
-        // Hide All
+        // Hide all
         function off() {
-            // document.body.style.cursor = "default";
             document.getElementById("section-title").style.display = "none";
             document.getElementById("close-button").style.display = "none";
             document.getElementById("overlay1").style.display = "none";
             document.getElementById("overlay2").style.display = "none";
             document.getElementById("overlay3").style.display = "none";
             document.getElementById("overlay4").style.display = "none";
-        }
-        // Switch cursor to close style
-        function switchToCloseCursor() {
-            document.body.style.cursor = "url('images/cursor-cross-black.png')16 0, pointer";
         }
         // Your body onload function
         function startFunction() {
