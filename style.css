@@ -35,6 +35,7 @@ body {
     text-align: center;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 
 .overlay {
@@ -47,32 +48,32 @@ body {
     right: 0;
     bottom: 0;
     background-color: white;
-    z-index: 2;
     text-align: center;
     overflow-y: scroll;
+    z-index: 2;
 }
 
 #section-title {
     display: none;
     background-color: white;
     position: absolute;
-    z-index: 10;
     width: 100%;
     height: 11%;
     color: black;
     text-align: center;
+    z-index: 3;
 }
 
 #close-button {
     display: none;
     position: absolute;
     right: 0px;
-    z-index: 11;
     width: 10%;
     height: 11%;
     color: black;
     text-align: center;
     cursor: pointer;
+    z-index: 4;
 }
 
 .section-color {
@@ -169,7 +170,7 @@ audio {
     }
 
     #section-title,
-    #close-button{
+    #close-button {
         height: calc(11% * 0.7);
     }
 }
