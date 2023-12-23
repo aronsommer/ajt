@@ -75,7 +75,7 @@ body {
     cursor: pointer;
 }
 
-.sectioncolor {
+.section-color {
     position: relative;
     margin: auto;
     padding: 0;
@@ -83,7 +83,7 @@ body {
     height: auto;
 }
 
-.sectiontext {
+.section-text {
     position: relative;
     margin: auto;
     padding: 0;
@@ -134,7 +134,7 @@ audio {
         line-height: 8vh;
     }
 
-    .sectiontext {
+    .section-text {
         font-size: 4vh;
         letter-spacing: 0.2vh;
     }
@@ -163,7 +163,7 @@ audio {
         line-height: calc(8vh * 0.7);
     }
 
-    .sectiontext {
+    .section-text {
         font-size: calc(4vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
     }
