@@ -6,14 +6,10 @@ Blue: #CCE6FF
 Green: #CCFFCC
 */
 
-audio {
-    width: 75%;
-}
-
 body,
+p,
 h1,
-.astext,
-p {
+.text-button {
     font-family: 'Lora', serif;
     font-weight: 400;
     font-style: normal;
@@ -27,30 +23,18 @@ body {
     background-color: white;
 }
 
-#main {
-    text-align: center;
-}
-
-h1 {
-    letter-spacing: 0.2vh;
-    font-size: 5vh;
-    line-height: 1vh;
-}
-
-.astext {
+.text-button {
     background: none;
     border: none;
     margin: 0;
     padding: 0;
     cursor: pointer;
-    letter-spacing: 0.2vh;
-    font-size: 5vh;
-    line-height: 8vh;
 }
 
-p {
-    letter-spacing: 0.1vh;
-    font-size: 2vh;
+#main {
+    text-align: center;
+    position: absolute;
+    width: 100%;
 }
 
 .overlay {
@@ -68,21 +52,13 @@ p {
     overflow-y: scroll;
 }
 
-.full-width-image {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    display: block;
-}
-
 #section-title {
     display: none;
     background-color: white;
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 10%;
+    height: 12%;
     color: black;
     text-align: center;
 }
@@ -93,7 +69,7 @@ p {
     right: 0px;
     z-index: 11;
     width: 10%;
-    height: 10%;
+    height: 12%;
     color: black;
     text-align: center;
     cursor: pointer;
@@ -116,8 +92,18 @@ p {
     height: 50%;
     color: black;
     font-family: 'Helvetica', sans-serif;
-    font-size: 4vh;
-    letter-spacing: 0.2vh;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+audio {
+    width: 75%;
 }
 
 * {
@@ -128,15 +114,23 @@ p {
 /* Desktop */
 @media screen and (min-width: 992px) {
 
-    h1 {
-        letter-spacing: 0.2vh;
+    p {
+        font-size: 2vh;
+        letter-spacing: 0.1vh;
+    }
+
+    h1,
+    #main,
+    #section-title,
+    #close-button {
         font-size: 5vh;
+        letter-spacing: 0.2vh;
         line-height: 1vh;
     }
 
-    .astext {
-        letter-spacing: 0.2vh;
+    .text-button {
         font-size: 5vh;
+        letter-spacing: 0.2vh;
         line-height: 8vh;
     }
 
@@ -149,20 +143,33 @@ p {
 /* Mobile */
 @media screen and (max-width: 992px) {
 
-    h1 {
-        letter-spacing: 0.133vh;
-        font-size: 3.333vh;
-        line-height: 0.666vh;
+    p {
+        font-size: calc(2vh * 0.7);
+        letter-spacing: calc(0.1vh * 0.7);
     }
 
-    .astext {
-        letter-spacing: 0.133vh;
-        font-size: 3.333vh;
-        line-height: 5.333vh;
+    h1,
+    #main,
+    #section-title,
+    #close-button {
+        font-size: calc(5vh * 0.7);
+        letter-spacing: calc(0.2vh * 0.7);
+        line-height: calc(1vh * 0.7);
+    }
+
+    .text-button {
+        font-size: calc(5vh * 0.7);
+        letter-spacing: calc(0.2vh * 0.7);
+        line-height: calc(8vh * 0.7);
     }
 
     .sectiontext {
-        font-size: 2.666vh;
-        letter-spacing: 0.133vh;
+        font-size: calc(4vh * 0.7);
+        letter-spacing: calc(0.2vh * 0.7);
+    }
+
+    #section-title,
+    #close-button{
+        height: calc(12% * 0.7);
     }
 }

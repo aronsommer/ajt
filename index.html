@@ -24,7 +24,7 @@
         <div id="section-title"></div>
 
         <!-- Close button -->
-        <div id="close-button" onclick="off()"><br>
+        <div id="close-button" onclick="off()"><br><br>
             <h1>&#10005;</h1>
         </div>
 
@@ -199,14 +199,14 @@
         <!-- Main content -->
 
         <div id="main">
-            <br>
+            <br><br>
             <h1>Acoustic Jazz Trio</h1><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="astext" onclick="on1()">Über uns</button><br>
-            <button class="astext" onclick="on2()">Hörproben</button><br>
-            <button class="astext" onclick="on3()">Events</button><br>
+            <button class="text-button" onclick="on1()">Über uns</button><br>
+            <button class="text-button" onclick="on2()">Hörproben</button><br>
+            <button class="text-button" onclick="on3()">Events</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="astext" onclick="on4()">Kontakt</button><br>
+            <button class="text-button" onclick="on4()">Kontakt</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
             <p>Copyright ©
                 <script>
@@ -221,7 +221,7 @@
     <script>
         // Show section 1
         function on1() {
-            document.getElementById("section-title").innerHTML = "<br><h1>Über uns</h1>";
+            document.getElementById("section-title").innerHTML = "<br><br><h1>Über uns</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay1").style.display = "block";
@@ -229,7 +229,7 @@
         }
         // Show section 2
         function on2() {
-            document.getElementById("section-title").innerHTML = "<br><h1>Hörproben</h1>";
+            document.getElementById("section-title").innerHTML = "<br><br><h1>Hörproben</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay2").style.display = "block";
@@ -237,7 +237,7 @@
         }
         // Show section 3
         function on3() {
-            document.getElementById("section-title").innerHTML = "<br><h1>Events</h1>";
+            document.getElementById("section-title").innerHTML = "<br><br><h1>Events</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay3").style.display = "block";
@@ -245,7 +245,7 @@
         }
         // Show section 4
         function on4() {
-            document.getElementById("section-title").innerHTML = "<br><h1>Kontakt</h1>";
+            document.getElementById("section-title").innerHTML = "<br><br><h1>Kontakt</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay4").style.display = "block";
