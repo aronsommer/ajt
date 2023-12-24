@@ -24,13 +24,13 @@
         <div id="section-title"></div>
 
         <!-- Close button -->
-        <div id="close-button" onclick="off()"><br><br>
+        <div id="close-button" onclick="hideAll()"><br><br>
             <h1>&#10005;</h1>
         </div>
 
         <!-- Section 1 -->
         <div id="overlay1" class="overlay">
-            <br><br><br><br><br>
+            <div class="multi-br"></div>
             <!-- Section 1-1 -->
             <img class="full-width-image" src="images/sections/section1-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #FFCCFF">
@@ -101,8 +101,7 @@
         </div>
         <!-- Section 2 -->
         <div id="overlay2" class="overlay">
-            <br><br><br><br><br>
-            <!-- Section 2-1 -->
+            <div class="multi-br"></div>
             <img class="full-width-image" src="images/sections/section2-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #FFFFCC">
                 <div class="section-text" style="text-align: center;">
@@ -148,8 +147,7 @@
         </div>
         <!-- Section 3 -->
         <div id="overlay3" class="overlay">
-            <br><br><br><br><br>
-            <!-- Section 3-1 -->
+            <div class="multi-br"></div>
             <img class="full-width-image" src="images/sections/section3-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #CCFFCC">
                 <div class="section-text" style="text-align: left;">
@@ -179,8 +177,7 @@
         </div>
         <!-- Section 4 -->
         <div id="overlay4" class="overlay">
-            <br><br><br><br><br>
-            <!-- Section 4-1 -->
+            <div class="multi-br"></div>
             <img class="full-width-image" src="images/sections/section4-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #CCE6FF">
                 <div class="section-text" style="text-align: center;">
@@ -202,11 +199,11 @@
             <br><br>
             <h1>Acoustic Jazz Trio</h1><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="text-button" onclick="on1()">Über uns</button><br>
-            <button class="text-button" onclick="on2()">Hörproben</button><br>
-            <button class="text-button" onclick="on3()">Events</button><br>
+            <button class="text-button" onclick="show1()">Über uns</button><br>
+            <button class="text-button" onclick="show2()">Hörproben</button><br>
+            <button class="text-button" onclick="show3()">Events</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="text-button" onclick="on4()">Kontakt</button><br>
+            <button class="text-button" onclick="show4()">Kontakt</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
             <p>Copyright ©
                 <script>
@@ -220,7 +217,7 @@
 
     <script>
         // Show section 1
-        function on1() {
+        function show1() {
             document.getElementById("section-title").innerHTML = "<br><br><h1>Über uns</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
@@ -228,7 +225,7 @@
             document.getElementById("overlay1").scrollTop = 0;
         }
         // Show section 2
-        function on2() {
+        function show2() {
             document.getElementById("section-title").innerHTML = "<br><br><h1>Hörproben</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
@@ -236,7 +233,7 @@
             document.getElementById("overlay2").scrollTop = 0;
         }
         // Show section 3
-        function on3() {
+        function show3() {
             document.getElementById("section-title").innerHTML = "<br><br><h1>Events</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
@@ -244,7 +241,7 @@
             document.getElementById("overlay3").scrollTop = 0;
         }
         // Show section 4
-        function on4() {
+        function show4() {
             document.getElementById("section-title").innerHTML = "<br><br><h1>Kontakt</h1>";
             document.getElementById("section-title").style.display = "block";
             document.getElementById("close-button").style.display = "block";
@@ -252,7 +249,7 @@
             document.getElementById("overlay4").scrollTop = 0;
         }
         // Hide all
-        function off() {
+        function hideAll() {
             document.getElementById("section-title").style.display = "none";
             document.getElementById("close-button").style.display = "none";
             document.getElementById("overlay1").style.display = "none";
@@ -262,7 +259,11 @@
         }
         // Your body onload function
         function startFunction() {
-            // Do stuff
+            // Add multiple <br> to all multi-br divs
+            var multi_br_divs = document.querySelectorAll(".multi-br");
+            for (var i = 0; i < multi_br_divs.length; i++) {
+                multi_br_divs[i].innerHTML = "<br>".repeat(6);
+            }
         }
     </script>
 
