@@ -1,7 +1,7 @@
 /*
 Colors:
-Pink: #FFCCFF
 Yellow: #FFFFCC
+Pink: #FFCCFF
 Blue: #CCE6FF
 Green: #CCFFCC
 */
@@ -56,7 +56,7 @@ body {
 #section-title {
     background-color: white;
     color: black;
-    display: none;
+    display: block;
     height: 11%;
     position: fixed;
     text-align: center;
@@ -67,7 +67,7 @@ body {
 #close-button {
     color: black;
     cursor: pointer;
-    display: none;
+    display: block;
     height: 11%;
     position: fixed;
     right: 0px;

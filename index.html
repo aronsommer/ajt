@@ -20,16 +20,15 @@
 
         <!-- ---------------------------- Overlays ----------------------------- -->
 
-        <!-- Section title -->
-        <div id="section-title"></div>
-
-        <!-- Close button -->
-        <div id="close-button" onclick="hideAll()"><br><br>
-            <h1>&#10005;</h1>
-        </div>
-
         <!-- Section 1 -->
         <div id="overlay1" class="overlay">
+            <!-- Section title and close button -->
+            <div id="section-title"><br><br>
+                <h1>Über uns</h1>
+            </div>
+            <div id="close-button" onclick="hideAll()"><br><br>
+                <h1>&#10005;</h1>
+            </div>
             <br><br><br><br><br><br>
             <!-- Section 1-1 -->
             <img class="full-width-image" src="images/sections/section1-1.jpg" alt=""><br><br>
@@ -101,6 +100,13 @@
         </div>
         <!-- Section 2 -->
         <div id="overlay2" class="overlay">
+            <!-- Section title and close button -->
+            <div id="section-title"><br><br>
+                <h1>Hörproben</h1>
+            </div>
+            <div id="close-button" onclick="hideAll()"><br><br>
+                <h1>&#10005;</h1>
+            </div>
             <br><br><br><br><br><br>
             <img class="full-width-image" src="images/sections/section2-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #FFFFCC">
@@ -147,6 +153,13 @@
         </div>
         <!-- Section 3 -->
         <div id="overlay3" class="overlay">
+            <!-- Section title and close button -->
+            <div id="section-title"><br><br>
+                <h1>Events</h1>
+            </div>
+            <div id="close-button" onclick="hideAll()"><br><br>
+                <h1>&#10005;</h1>
+            </div>
             <br><br><br><br><br><br>
             <img class="full-width-image" src="images/sections/section3-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #CCFFCC">
@@ -177,6 +190,13 @@
         </div>
         <!-- Section 4 -->
         <div id="overlay4" class="overlay">
+            <!-- Section title and close button -->
+            <div id="section-title"><br><br>
+                <h1>Kontakt</h1>
+            </div>
+            <div id="close-button" onclick="hideAll()"><br><br>
+                <h1>&#10005;</h1>
+            </div>
             <br><br><br><br><br><br>
             <img class="full-width-image" src="images/sections/section4-1.jpg" alt=""><br><br>
             <div class="section-color" style="background-color: #CCE6FF">
@@ -218,40 +238,26 @@
     <script>
         // Show section 1
         function show1() {
-            document.getElementById("section-title").innerHTML = "<br><br><h1>Über uns</h1>";
-            document.getElementById("section-title").style.display = "block";
-            document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay1").style.display = "block";
             document.getElementById("overlay1").scrollTop = 0;
         }
         // Show section 2
         function show2() {
-            document.getElementById("section-title").innerHTML = "<br><br><h1>Hörproben</h1>";
-            document.getElementById("section-title").style.display = "block";
-            document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay2").style.display = "block";
             document.getElementById("overlay2").scrollTop = 0;
         }
         // Show section 3
         function show3() {
-            document.getElementById("section-title").innerHTML = "<br><br><h1>Events</h1>";
-            document.getElementById("section-title").style.display = "block";
-            document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay3").style.display = "block";
             document.getElementById("overlay3").scrollTop = 0;
         }
         // Show section 4
         function show4() {
-            document.getElementById("section-title").innerHTML = "<br><br><h1>Kontakt</h1>";
-            document.getElementById("section-title").style.display = "block";
-            document.getElementById("close-button").style.display = "block";
             document.getElementById("overlay4").style.display = "block";
             document.getElementById("overlay4").scrollTop = 0;
         }
         // Hide all
         function hideAll() {
-            document.getElementById("section-title").style.display = "none";
-            document.getElementById("close-button").style.display = "none";
             document.getElementById("overlay1").style.display = "none";
             document.getElementById("overlay2").style.display = "none";
             document.getElementById("overlay3").style.display = "none";
