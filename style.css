@@ -53,7 +53,7 @@ body {
     z-index: 2;
 }
 
-#section-title {
+.section-title {
     background-color: white;
     /* border-bottom: 1px solid; */
     /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
@@ -67,7 +67,7 @@ body {
     z-index: 3;
 }
 
-#close-button {
+.close-button {
     color: black;
     cursor: pointer;
     display: block;
@@ -125,8 +125,8 @@ audio {
 
     h1,
     #main,
-    #section-title,
-    #close-button {
+    .section-title,
+    .close-button {
         font-size: 5vh;
         letter-spacing: 0.2vh;
         line-height: 1vh;
@@ -154,8 +154,8 @@ audio {
 
     h1,
     #main,
-    #section-title,
-    #close-button {
+    .section-title,
+    .close-button {
         font-size: calc(5vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
         line-height: calc(1vh * 0.7);
@@ -172,8 +172,8 @@ audio {
         letter-spacing: calc(0.2vh * 0.7);
     }
 
-    #section-title,
-    #close-button {
+    .section-title,
+    .close-button {
         height: calc(11% * 0.7);
     }
 }
