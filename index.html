@@ -222,11 +222,11 @@
             <br><br>
             <h1>Acoustic Jazz Trio</h1><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="text-button" onclick="show1()">Über uns</button><br>
-            <button class="text-button" onclick="show2()">Hörproben</button><br>
-            <button class="text-button" onclick="show3()">Events</button><br>
+            <button class="text-button" onclick="show(1)">Über uns</button><br>
+            <button class="text-button" onclick="show(2)">Hörproben</button><br>
+            <button class="text-button" onclick="show(3)">Events</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
-            <button class="text-button" onclick="show4()">Kontakt</button><br>
+            <button class="text-button" onclick="show(4)">Kontakt</button><br>
             <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
             <p>Copyright ©
                 <script>
@@ -239,32 +239,17 @@
     <!-- Scripts -->
 
     <script>
-        // Show section 1
-        function show1() {
-            document.getElementById("overlay1").style.display = "block";
-            document.getElementById("overlay1").scrollTop = 0;
+        // Show section
+        function show(number) {
+            document.getElementById("overlay" + number).style.display = "block";
+            document.getElementById("overlay" + number).scrollTop = 0;
         }
-        // Show section 2
-        function show2() {
-            document.getElementById("overlay2").style.display = "block";
-            document.getElementById("overlay2").scrollTop = 0;
-        }
-        // Show section 3
-        function show3() {
-            document.getElementById("overlay3").style.display = "block";
-            document.getElementById("overlay3").scrollTop = 0;
-        }
-        // Show section 4
-        function show4() {
-            document.getElementById("overlay4").style.display = "block";
-            document.getElementById("overlay4").scrollTop = 0;
-        }
-        // Hide all
+        // Hide all overlays
         function hideAll() {
-            document.getElementById("overlay1").style.display = "none";
-            document.getElementById("overlay2").style.display = "none";
-            document.getElementById("overlay3").style.display = "none";
-            document.getElementById("overlay4").style.display = "none";
+            let overlayArray = document.getElementsByClassName("overlay");
+            for (let index = 0; index < overlayArray.length; index++) {
+                overlayArray[index].style.display = 'none';
+            }
         }
         // Your body onload function
         function startFunction() {
