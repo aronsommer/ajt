@@ -38,6 +38,10 @@ body {
     padding: 0;
 }
 
+.text-button:focus {
+    outline: none;
+}
+
 .overlay {
     background-color: white;
     bottom: 0;
