@@ -143,8 +143,8 @@ audio {
     }
 
     .section-text {
-        font-size: 4vh;
-        letter-spacing: 0.2vh;
+        font-size: calc(4vh * 0.7);
+        letter-spacing: calc(0.2vh * 0.7);
     }
 }
 
