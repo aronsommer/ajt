@@ -119,6 +119,37 @@ audio {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* Bio */
+.bio-text {
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+    font-size: calc(4vh * 0.7);
+    letter-spacing: calc(0.2vh * 0.7);
+    margin: auto;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.bio-text:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.bio-column {
+    box-sizing: border-box;
+    float: left;
+    padding: 3vw;
+    width: 33.33%;
+}
+
+.bio-column ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
 /* Desktop */
 @media screen and (min-width: 992px) {
 
@@ -202,5 +233,10 @@ audio {
     .section-title,
     .close-button {
         height: calc(11% * 0.7);
+    }
+
+    .bio-text {
+        font-size: calc(4vh * 0.35);
+        letter-spacing: calc(0.2vh * 0.35);
     }
 }
