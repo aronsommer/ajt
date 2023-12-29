@@ -229,8 +229,10 @@ audio {
     }
 
     .section-text {
-        font-size: calc(4vh * 0.7);
-        letter-spacing: calc(0.2vh * 0.7);
+        /* font-size: calc(4vh * 0.7);
+        letter-spacing: calc(0.2vh * 0.7); */
+        font-size: calc(4vh * 0.35);
+        letter-spacing: calc(0.2vh * 0.35);
     }
 
     .section-title,
