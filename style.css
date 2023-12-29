@@ -1,10 +1,13 @@
+/* || COLORS */
+
 /*
-Colors:
 Yellow: #FFFFCC
 Pink: #FFCCFF
 Blue: #CCE6FF
 Green: #CCFFCC
 */
+
+/* || GENERAL STYLES */
 
 body,
 p,
@@ -120,7 +123,8 @@ audio {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Bio */
+/* || BIO STYLES */
+
 .bio-text {
     color: black;
     font-family: 'Helvetica', sans-serif;
@@ -154,7 +158,8 @@ audio {
     padding-left: 0;
 }
 
-/* Desktop */
+/* || DESKTOP STYLES */
+
 @media screen and (min-width: 992px) {
 
     p {
@@ -183,7 +188,8 @@ audio {
     }
 }
 
-/* Main content on desktop with background image */
+/* || MAIN CONTENT WITH BACKGROUND IMAGE */
+
 @media screen and (min-width: 992px) {
     body {
         background-attachment: fixed;
@@ -206,7 +212,8 @@ audio {
     }
 }
 
-/* Mobile */
+/* || MOBILE STYLES */
+
 @media screen and (max-width: 992px) {
 
     p {
