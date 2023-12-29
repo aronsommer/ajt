@@ -200,7 +200,7 @@ audio {
         color: white;
     }
 
-    hr {
+    #main hr {
         border-top: 1px white solid !important;
     }
 }
