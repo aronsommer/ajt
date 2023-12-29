@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="includeHTML.js"></script>
+    <script src="myScript.js"></script>
 </head>
 
 <body onload="startFunction()">
@@ -21,212 +23,16 @@
         <!-- Sections -->
 
         <!-- Section 1 -->
-        <div id="overlay1" class="overlay">
-            <!-- Section title and close button -->
-            <div class="section-title"><br><br>
-                <h1>Über uns</h1>
-            </div>
-            <div class="close-button" onclick="hideAllSections()"><br><br>
-                <h1>&#10005;</h1>
-            </div>
-            <br><br><br><br><br><br>
-            <!-- Section 1-1 -->
-            <img class="full-width-image" src="images/sections/section1-1.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #FFCCFF">
-                <div class="section-text">
-                    <br>
-                    Der stimmungsvolle Sound eines aussergewöhnlichen Trios.<br><br>
-                    Das Acoustic Jazz Trio gibt jedem Event, ob Geschäftsanlass, Vernissage, Hochzeit oder
-                    Geburtstagsfeier, einen geschmackvollen Rahmen und ein gediegenes Ambiente.
-                    <br><br><br>
-                </div>
-            </div>
-            <br><br>
-            <!-- Section 1-2 -->
-            <img class="full-width-image" src="images/sections/section1-2.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #FFFFCC">
-                <div class="section-text">
-                    <br>
-                    Aus dem grossen Repertoire des Great American Songbook zaubern die drei erfahrenen Musiker immer die
-                    passende Stimmung aus dem Hut. Ob mit Swing, Bossa-Nova, Blues oder Groove-Jazz versteht es das
-                    Trio, durch ihr langjähriges Zusammenspiel, flexibel auf die individuellen musikalischen Vorlieben
-                    einzugehen.
-                    <br><br><br>
-                </div>
-            </div>
-            <br><br>
-            <!-- Section 1-3 -->
-            <img class="full-width-image" src="images/sections/section1-3.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #CCFFCC; width: 100%;">
-                <div class="bio-text">
-                    <div class="bio-column">
-                        <br><b>Alex Hendriksen</b><br>Tenor/Sopran-Saxophon<br>
-                        <hr style="border:none; border-top:1px black solid !important; height: 1px;"><br>
-                        <ul>
-                            <li>&#x2022;&nbsp;Abgeschlossenes Studium an der Berklee College of Music, USA.</li><br>
-                            <li>&#x2022;&nbsp;Konzerttätigkeit im In-und Ausland mit verschiedenen Formationen.</li><br>
-                            <li>&#x2022;&nbsp;Auftritte an zahlreichen Festivals wie z.B. Jazz Festival Montreux,
-                                Menuhin Festival
-                                Gstaad,
-                                Jazz Festival St. Moritz, Off Beat Basel, diverse Sommer Openair Festival, JazznoJazz
-                                Zürich, Jazz Festival Fribourg, Jazz Festival Schaffhausen, etc.</li><br>
-                            <li>&#x2022;&nbsp;Tourneen u.a. mit Pepe Lienhard, Udo Jürgens, Seven.</li><br>
-                            <li>&#x2022;&nbsp;Unterrichtet Saxophon und Improvisation in Basel.</li><br>
-                        </ul>
-                    </div>
-                    <div class="bio-column">
-                        <br><b>Dieter Buchwalder</b><br>Vibraphon, Marimbaphon<br>
-                        <hr style="border:none; border-top:1px black solid !important; height: 1px;"><br>
-                        <ul>
-                            <li>&#x2022;&nbsp;Studium und Abschluss an der Jazzschule Basel.</li><br>
-                            <li>&#x2022;&nbsp;Ausgedehnte Studienaufenthalte in Südindien und New York.</li><br>
-                            <li>&#x2022;&nbsp;Mitwirkung in verschiedenen Formationen und Projekten wie Theatermusik,
-                                Dichterlesungen
-                                und
-                                Zirkusmusik (Schweizer- Tournee mit Circus Monti).</li><br>
-                            <li>&#x2022;&nbsp;Entwickelt eigene Instrumente wie Glasharfen und Wasserräder und spielt
-                                mit vers.
-                                Duo-Partner Theatermusik, Vernissagen und viele Konzerte.</li><br>
-                            <li>&#x2022;&nbsp;Unterrichtet Vibraphon, Marimba, Saxophon, Querflöte und Ukulele in Basel.
-                            </li><br>
-                        </ul>
-                    </div>
-                    <div class="bio-column">
-                        <br><b>Florian Abt</b><br>Kontrabass<br>
-                        <hr style="border:none; border-top:1px black solid !important; height: 1px;"><br>
-                        <ul>
-                            <li>&#x2022;&nbsp;Studium und Abschluss an der Jazzschule Basel.</li><br>
-                            <li>&#x2022;&nbsp;Konzerte mit verschiedenen Bands und Formationen, u.a. Kapsamun (Balkan
-                                Jazz).</li><br>
-                            <li>&#x2022;&nbsp;Auftritte an verschiedenen Festivals wie Jazzfestival Willisau, Tirana
-                                Jazz Festival,
-                                Winterthurer Musikfestwochen, int. Filmfestival Venedig, etc.</li><br>
-                            <li>&#x2022;&nbsp;Mitarbeit bei verschiedenen Projekten wie Film- und Theatermusik (Theater
-                                Basel, Theater
-                                Fauteuil, Basel) und CD- Produktionen.</li><br>
-                            <li>&#x2022;&nbsp;Unterrichtet E-Bass und Kontrabass in Basel.</li><br>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="section1.html"></div>
+
         <!-- Section 2 -->
-        <div id="overlay2" class="overlay">
-            <!-- Section title and close button -->
-            <div class="section-title"><br><br>
-                <h1>Hörproben</h1>
-            </div>
-            <div class="close-button" onclick="hideAllSections()"><br><br>
-                <h1>&#10005;</h1>
-            </div>
-            <br><br><br><br><br><br>
-            <!-- Section 2-1 -->
-            <img class="full-width-image" src="images/sections/section2-1.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #FFFFCC; width: 100%;">
-                <div class="section-text" style="text-align: center;">
-                    <br>
-                    Smile - Charlie Chaplin<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br>
-                    The Pink Panther Theme - Henry Mancini<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br>
-                    In The Sign Of Libra - Dusko Goykovich<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br>
-                    Corcovado - Antônio Carlos Jobim<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br>
-                    We Will Meet Again - Bill Evans<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br>
-                    Only Trust Your Heart - Benny Carter, Sammy Cahn<br><br>
-                    <audio controls>
-                        <source src="audio/sample-3s.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <br><br><br>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="section2.html"></div>
+
         <!-- Section 3 -->
-        <div id="overlay3" class="overlay">
-            <!-- Section title and close button -->
-            <div class="section-title"><br><br>
-                <h1>Events</h1>
-            </div>
-            <div class="close-button" onclick="hideAllSections()"><br><br>
-                <h1>&#10005;</h1>
-            </div>
-            <br><br><br><br><br><br>
-            <!-- Section 3-1 -->
-            <img class="full-width-image" src="images/sections/section3-1.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #CCFFCC; width: 75%;">
-                <div class="section-text" style="text-align: left;">
-                    <br>
-                    Die akustische Besetzung mit Vibraphon, Saxophon und Kontrabass kreiert eine dezente,
-                    unaufdringliche Background Atmosphäre und ist als solche problemlos beweglich und örtlich
-                    verschiebbar. Das Acoustic Jazz Trio untermalt mit stimmungsvollem Sound Ihren aussergewöhnlichen
-                    Anlass.
-                    <br> <br>
-                    Referenzliste Acoustic Jazz Trio:
-                    <br> <br>
-                    Botanischen Garten Brügglingen, Villa Merian Basel, UBS, Credit Suisse AG, Alternative Bank Olten,
-                    Messe Schweiz, Kultur Forum Laufental, Swiss Re Zürich, Ricola AG Laufen, Porsche Club Basel, Hirzen
-                    Pavion Basel, CLS Communication Zürich, Titoni AG Grenchen, Blindenhundeschule Allschwil, Capvis
-                    Equity Partners AG Zürich, APS Advanced Productions, Offiziersgesellschaft Basel,
-                    PiecewaterhouseCoopers AG, Holzbau Schweiz, Rofa Bau AG Aesch, Kantonsspital Basel, drFachhochschule
-                    St.Gallen, Helvetia-Versicherung, Endress+Hauser Flowtec Reinach, Rohrer Leading Solutions Möhlin,
-                    Segantini Catering Adliswil, IMK Institut für Medizin und Kommunikation Basel, Osec Business Network
-                    Zürich, Ernest+Young, Bachem AG Bubendorf, Executive Insight AG Zug, Bildungszentrum Jardin-Suisse
-                    Pfäffikon, Safranzunft Basel, Eisblume Worb, Hotel zum Storchen Zürich, Schloss Greifensee, Villa
-                    Mettlen Muri, Hotel Sardona Elm, Burckhardt+Partner Basel, Möbel Hubacher Rothrist, Restaurant
-                    Schwellenmätteli Bern, Alpinzentrum Gstaad GmbH Gstaad, BMW Deutschland, Schloss Lenzburg,
-                    Photographie Lehmann Basel, Blaserarchitekten Basel, Miss Schweiz Organisation.
-                    <br><br><br>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="section3.html"></div>
+
         <!-- Section 4 -->
-        <div id="overlay4" class="overlay">
-            <!-- Section title and close button -->
-            <div class="section-title"><br><br>
-                <h1>Kontakt</h1>
-            </div>
-            <div class="close-button" onclick="hideAllSections()"><br><br>
-                <h1>&#10005;</h1>
-            </div>
-            <br><br><br><br><br><br>
-            <!-- Section 4-1 -->
-            <img class="full-width-image" src="images/sections/section4-1.jpg" alt=""><br><br>
-            <div class="section-color" style="background-color: #CCE6FF; width: 75%;">
-                <div class="section-text" style="text-align: center;">
-                    <br>
-                    Dieter Buchwalder<br>
-                    Klybeckstrasse 8<br>
-                    CH-4057 Basel<br><br>
-                    +41 61 681 33 26<br>
-                    +41 79 227 57 14<br><br>
-                    buchwal@bluewin.ch<br><br><br>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="section4.html"></div>
 
         <!-- Main content -->
 
@@ -251,30 +57,10 @@
     <!-- Scripts -->
 
     <script>
-        let oneSectionIsShowing = false;
-        // Show section
-        function showSection(number) {
-            document.getElementById("overlay" + number).style.display = "block";
-            document.getElementById("overlay" + number).scrollTop = 0;
-            oneSectionIsShowing = true;
-        }
-        // Hide all sections
-        function hideAllSections() {
-            let overlayArray = document.getElementsByClassName("overlay");
-            for (let index = 0; index < overlayArray.length; index++) {
-                overlayArray[index].style.display = 'none';
-            }
-            oneSectionIsShowing = false;
-        }
-        // Detect escape key press to hide all sections
-        document.addEventListener('keydown', evt => {
-            if (evt.key === 'Escape' && oneSectionIsShowing) {
-                hideAllSections();
-            }
-        });
-        // Body onload function
-        function startFunction() {
-            // Do stuff
+        // Include HTML snippets
+        includeHTML(myCallback);
+        function myCallback() {
+            // code that has to wait goes here
         }
     </script>
 
