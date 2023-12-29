@@ -33,6 +33,7 @@ body {
 .text-button {
     background: none;
     border: none;
+    color: black;
     cursor: pointer;
     margin: 0;
     padding: 0;
