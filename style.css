@@ -210,6 +210,11 @@ audio {
     #main hr {
         border-top: 1px white solid !important;
     }
+
+    #mobile-cover-image,
+    .mobile-cover-space {
+        display: none;
+    }
 }
 
 /* || MOBILE STYLES */
@@ -251,5 +256,17 @@ audio {
     .bio-text {
         font-size: calc(4vh * 0.35);
         letter-spacing: calc(0.2vh * 0.35);
+    }
+
+    #mobile-cover-image {
+        display: block;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .mobile-cover-space {
+        display: block;
     }
 }
