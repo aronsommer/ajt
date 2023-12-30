@@ -190,6 +190,7 @@ audio {
     .section-div {
         position: absolute;
         top: 15%;
+        width: 100%;
     }
 }
 
@@ -280,5 +281,6 @@ audio {
     .section-div {
         position: absolute;
         top: calc(15% * 0.7);
+        width: 100%;
     }
 }
