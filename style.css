@@ -7,7 +7,7 @@ Blue: #CCE6FF
 Green: #CCFFCC
 */
 
-/* || GENERAL STYLES */
+/* || DESKTOP STYLES */
 
 body,
 p,
@@ -20,24 +20,50 @@ h1,
     text-rendering: optimizeLegibility;
 }
 
+p {
+    font-size: 2vh;
+    letter-spacing: 0.1vh;
+}
+
+h1,
+#main,
+.section-title,
+.close-button {
+    font-size: 5vh;
+    letter-spacing: 0.2vh;
+    line-height: 1vh;
+}
+
 body {
-    background-color: white;
+    background-attachment: fixed;
+    background-image: url('images/cover-1920x1080.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 
 #main {
+    color: white;
     position: fixed;
     text-align: center;
     width: 100%;
     z-index: 1;
 }
 
+#main hr {
+    border-top: 1px white solid !important;
+}
+
 .text-button {
     background: none;
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
+    font-size: 5vh;
+    letter-spacing: 0.2vh;
+    line-height: 8vh;
     margin: 0;
     padding: 0;
 }
@@ -59,6 +85,12 @@ body {
     top: 0;
     width: 100%;
     z-index: 2;
+}
+
+.section-div {
+    position: absolute;
+    top: 15%;
+    width: 100%;
 }
 
 .section-title {
@@ -98,7 +130,9 @@ body {
 .section-text {
     color: black;
     font-family: 'Helvetica', sans-serif;
+    font-size: calc(4vh * 0.7);
     height: 50%;
+    letter-spacing: calc(0.2vh * 0.7);
     margin: auto;
     padding: 0;
     position: relative;
@@ -122,8 +156,6 @@ audio {
     /* Remove blue highlight of button on mobile */
     -webkit-tap-highlight-color: transparent;
 }
-
-/* || BIO STYLES */
 
 .bio-text {
     color: black;
@@ -158,74 +190,22 @@ audio {
     padding-left: 0;
 }
 
-/* || DESKTOP STYLES */
-
-@media screen and (min-width: 992px) {
-
-    p {
-        font-size: 2vh;
-        letter-spacing: 0.1vh;
-    }
-
-    h1,
-    #main,
-    .section-title,
-    .close-button {
-        font-size: 5vh;
-        letter-spacing: 0.2vh;
-        line-height: 1vh;
-    }
-
-    .text-button {
-        font-size: 5vh;
-        letter-spacing: 0.2vh;
-        line-height: 8vh;
-    }
-
-    .section-text {
-        font-size: calc(4vh * 0.7);
-        letter-spacing: calc(0.2vh * 0.7);
-    }
-
-    .section-div {
-        position: absolute;
-        top: 15%;
-        width: 100%;
-    }
-}
-
-/* || MAIN CONTENT WITH BACKGROUND IMAGE */
-
-@media screen and (min-width: 992px) {
-    body {
-        background-attachment: fixed;
-        background-image: url('images/cover-1920x1080.jpg');
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #main {
-        color: white;
-    }
-
-    .text-button {
-        color: white;
-    }
-
-    #main hr {
-        border-top: 1px white solid !important;
-    }
-
-    #mobile-cover-div,
-    #mobile-cover-image {
-        display: none;
-    }
+#mobile-cover-div,
+#mobile-cover-image {
+    display: none;
 }
 
 /* || MOBILE STYLES */
 
 @media screen and (max-width: 992px) {
+
+    body {
+        background-image: none;
+    }
+
+    #main {
+        color: black;
+    }
 
     p {
         font-size: calc(2vh * 0.7);
@@ -241,7 +221,12 @@ audio {
         line-height: calc(1vh * 0.7);
     }
 
+    #main hr {
+        border-top: 1px black solid !important;
+    }
+
     .text-button {
+        color: black;
         font-size: calc(5vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
         line-height: calc(8vh * 0.7);
