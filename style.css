@@ -232,11 +232,15 @@ audio {
         line-height: calc(8vh * 0.7);
     }
 
+    .section-div {
+        position: absolute;
+        top: calc(15% * 0.7);
+        width: 100%;
+    }
+
     .section-text {
         font-size: calc(4vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
-        /* font-size: calc(4vh * 0.35);
-        letter-spacing: calc(0.2vh * 0.35); */
     }
 
     .section-title,
@@ -260,12 +264,6 @@ audio {
         height: auto;
         margin: 0;
         padding: 0;
-        width: 100%;
-    }
-
-    .section-div {
-        position: absolute;
-        top: calc(15% * 0.7);
         width: 100%;
     }
 }
