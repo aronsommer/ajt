@@ -27,7 +27,7 @@ body {
 }
 
 #main {
-    position: absolute;
+    position: fixed;
     text-align: center;
     width: 100%;
     z-index: 1;
@@ -186,6 +186,11 @@ audio {
         font-size: calc(4vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
     }
+
+    .section-div {
+        position: absolute;
+        top: 15%;
+    }
 }
 
 /* || MAIN CONTENT WITH BACKGROUND IMAGE */
@@ -211,8 +216,8 @@ audio {
         border-top: 1px white solid !important;
     }
 
-    #mobile-cover-image,
-    .mobile-cover-space {
+    #mobile-cover-div,
+    #mobile-cover-image {
         display: none;
     }
 }
@@ -258,6 +263,12 @@ audio {
         letter-spacing: calc(0.2vh * 0.35);
     }
 
+    #mobile-cover-div {
+        display: block;
+        position: sticky;
+        top: calc(15% * 0.7);
+    }
+
     #mobile-cover-image {
         display: block;
         height: auto;
@@ -266,7 +277,8 @@ audio {
         width: 100%;
     }
 
-    .mobile-cover-space {
-        display: block;
+    .section-div {
+        position: absolute;
+        top: calc(15% * 0.7);
     }
 }
