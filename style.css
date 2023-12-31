@@ -96,8 +96,7 @@ body {
 .section-title {
     background-color: white;
     /* border-bottom: 1px solid; */
-    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
-    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+    /* box-shadow: 0 5px 5px -5px #999; */
     color: black;
     display: block;
     height: 11%;
