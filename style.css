@@ -194,6 +194,14 @@ audio {
     display: none;
 }
 
+.main-hr1 {
+    width: 30%;
+}
+
+.main-hr2 {
+    width: 10%;
+}
+
 /* || MOBILE STYLES */
 
 @media screen and (max-width: 992px) {
@@ -264,5 +272,10 @@ audio {
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+
+    .main-hr1,
+    .main-hr2 {
+        width: 50%;
     }
 }
