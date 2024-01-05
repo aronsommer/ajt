@@ -203,8 +203,18 @@ audio {
     width: 10%;
 }
 
+#copyright-div {
+    bottom: 0;
+    color: white;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
 /* || MOBILE STYLES */
 
+/* @media screen and (max-width: 768px) { */
 @media screen and (max-width: 992px) {
 
     body {
@@ -278,5 +288,9 @@ audio {
     .main-hr1,
     .main-hr2 {
         width: 50%;
+    }
+
+    #copyright-div {
+        color: black;
     }
 }
