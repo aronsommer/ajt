@@ -36,7 +36,7 @@ h1,
 
 body {
     background-attachment: fixed;
-    background-image: url('images/cover-1920x1080-3.jpeg');
+    background-image: url('images/cover-1920x1080.jpeg');
     /* background-position: center top; */
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -163,6 +163,8 @@ audio {
     color: black;
     font-family: 'Helvetica', sans-serif;
     font-size: calc(4vh * 0.7);
+    font-style: normal;
+    font-weight: 400;
     letter-spacing: calc(0.2vh * 0.7);
     margin: auto;
     position: relative;
