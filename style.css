@@ -131,6 +131,8 @@ body {
     color: black;
     font-family: 'Helvetica', sans-serif;
     font-size: calc(4vh * 0.7);
+    font-style: normal;
+    font-weight: 400;
     height: 50%;
     letter-spacing: calc(0.2vh * 0.7);
     margin: auto;
